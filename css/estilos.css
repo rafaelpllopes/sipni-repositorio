@@ -28,9 +28,13 @@ header {
 	transition: .3s;
 }
 
+.sipni-banner h2 {
+	text-transform: uppercase;
+}
+
 #vs-sistema a{
 	text-decoration: none;
-	color: white;
+	color: #FFF;
 }
 
 #vs-sistema a:hover{
