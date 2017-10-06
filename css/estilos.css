@@ -28,6 +28,19 @@ header {
 	transition: .3s;
 }
 
+#vs-sistema a{
+	text-decoration: none;
+	color: white;
+}
+
+#vs-sistema a:hover{
+	font-weight: bolder;
+	font-size: 1.5em;
+	background-color: rgba(0,0,0,0.5);
+	border-radius: 1em;
+	transition: .3s;
+}
+
 @media(min-width: 768px) {
 	#paineis-sobre {
 		margin-top: 0;	

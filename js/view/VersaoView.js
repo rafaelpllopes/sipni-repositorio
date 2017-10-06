@@ -1,7 +1,7 @@
 class VersaoView extends View {
     template(model) {
-        return `<li>Aplicação: ${model.app}</li>
-        <li>Banco de dados: ${model.db}</li>
-        <li>Instâncias: ${model.inst}</li>`;
+        return `<li><a href="#">Aplicação: ${model.app}</a></li>
+        <li><a href="#">Banco de dados: ${model.db}</a></li>
+        <li><a href="#">Instâncias: ${model.inst}</a></li>`;
     }
 }
