@@ -51,6 +51,19 @@ header {
 	font-weight: bold;
 }
 
+#aplicacoes .jumbotron {
+	width: 30%;
+	margin: 1em;
+}
+
+.jumbotron-custom .jumbotron {
+	background-color: #EEE;
+}
+
+.descricao-video {
+	padding: 1em;
+}
+
 @media(min-width: 768px) {
 	#paineis-sobre {
 		margin-top: 0;	
