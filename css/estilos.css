@@ -45,6 +45,12 @@ header {
 	transition: .3s;
 }
 
+.titulo2 {
+	text-align: center;
+	text-transform: uppercase;
+	font-weight: bold;
+}
+
 @media(min-width: 768px) {
 	#paineis-sobre {
 		margin-top: 0;	

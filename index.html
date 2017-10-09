@@ -22,16 +22,45 @@
 
 				<div class="collapse navbar-collapse" id="collapse-navbar">
 					<ul class="nav navbar-nav">
-						<li><a href="#">Instruções</a></li>
-						<li><a href="#">Atualizações</a></li>
-						<li><a href="#">Manuais</a></li>
+						<li><a href="#downloads">Downloads</a></li>
+						<li><a href="#instrucoes">Instruções</a></li>
+						<li><a href="#manuais">Manuais</a></li>
 					</ul>
 				</div>
 			</div>
 		</nav>
 		<div id="home" class="container sipni-bannerWrapper"></div>
 	</header>
-	<main></main>
+	<main class="container">
+		<section class="downloads" id="downloads">
+			<h2 class="titulo2">Downloads</h2>
+		</section>
+		<section class="instrucoes" id="instrucoes">
+			<h2 class="titulo2">Instruções</h2>
+			<div class="panel-group" id="accordion" role="tablist" aria-multiselectable="true">
+				<div class="panel panel-default">
+					<div class="panel-heading" role="tab" id="headingOne">
+						<h4 class="panel-title">
+							<a role="button" data-toggle="collapse" data-parent="#accordion" href="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+							Como realizar backup
+							</a>
+						</h4>
+					</div>
+					<div id="collapseOne" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingOne">
+						<div class="embed-responsive embed-responsive-16by9">
+							<video class="embed-responsive-item" controls>
+								<source src="http://189.44.213.211:8083/sipni/instrucoes/videos/Atualizacao.mp4" type="video/mp4">
+							</video>
+						</div>
+					</div>
+
+				</div>
+			</div>
+		</section>
+		<section class="manuais" id="manuais">
+			<h2 class="titulo2">Manuais</h2>
+		</section>
+	</main>
 	<footer class="jumbotron">
 		<div class="container">&copy; 2017 Rafael Pereira de Lacerda Lopes</div>
 	</footer>
