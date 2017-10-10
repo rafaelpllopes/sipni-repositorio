@@ -16,9 +16,11 @@ class SipniController {
         this._linksWin64View = new LinksViewApp('#win64');
         this._linksLnx64View = new LinksViewApp('#lnx64');
         this._versaoView.update(this._versao);
+        this._linkService = new LinksService();
     }
 
     importaLinks(){
+        
         this._listaLinksWin32.adicionar(new Link('http://189.44.213.211:8083/sipni/atualizacao/aplicacao//SIPNIInstWin32(5.2.0).zip', '5.2.0'));
         this._listaLinksWin32.adicionar(new Link('#', 'Teste1'));
         this._listaLinksWin32.adicionar(new Link('#', 'Teste2'));
@@ -34,5 +36,18 @@ class SipniController {
         this._listaLinksLnx64.adicionar(new Link('#', 'Teste2'));
         this._listaLinksLnx64.adicionar(new Link('#', 'Teste3'));
         this._linksLnx64View.update(this._listaLinksLnx64, 'Linux 64 Bits');
+        
+        /*
+        this._linkService
+            .importeLinksWin32()
+            .then(links => { 
+                links.forEach(link => {
+                    this._listaLinksWin32.adicionar(new Link(link.url, link.versao))
+                });
+                    this._linksWin32View.update(this._listaLinksWin32);
+                }
+            )
+            .catch(err=> console.log(err));
+        */
     }
 }
