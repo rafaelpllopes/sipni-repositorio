@@ -15,6 +15,22 @@ class LinksService {
         return this._importeLinks('http://localhost/sipni-repositorio/server/lista.php?pasta=lnx64');
     }
 
+    importeDB() {
+        return this._importeLinks('http://localhost/sipni-repositorio/server/lista.php?pasta=db');
+    }
+
+    importeInst() {
+        return this._importeLinks('http://localhost/sipni-repositorio/server/lista.php?pasta=inst');
+    }
+
+    importeBairros() {
+        return this._importeLinks('http://localhost/sipni-repositorio/server/lista.php?pasta=bairros');
+    }
+
+    importeUteis() {
+        return this._importeLinks('http://localhost/sipni-repositorio/server/lista.php?pasta=uteis');
+    }
+
     _importeLinks(url) {
         return this._http
             .get(url)

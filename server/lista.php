@@ -21,6 +21,30 @@
 			$lista = new ListFilesNames($local);
 			$registros = MontaLista::montar($lista, $local);
 		} break;
+
+		case 'db': {
+			$local = 'atualizacao/dbs';
+			$lista = new ListFilesNames($local);
+			$registros = MontaLista::montar($lista, $local);
+		} break;
+
+		case 'inst': {
+			$local = 'atualizacao/instancias';
+			$lista = new ListFilesNames($local);
+			$registros = MontaLista::montar($lista, $local);
+		} break;
+
+		case 'bairros': {
+			$local = 'atualizacao/bairros';
+			$lista = new ListFilesNames($local);
+			$registros = MontaLista::montar($lista, $local);
+		} break;
+
+		case 'uteis': {
+			$local = 'atualizacao/uteis';
+			$lista = new ListFilesNames($local);
+			$registros = MontaLista::montar($lista, $local);
+		} break;
 		default: $registro = []; break;
 	}	
 
