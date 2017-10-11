@@ -4,31 +4,31 @@ class LinksService {
     }
 
     importeLinksWin32() {
-        return this._importeLinks('http://localhost/sipni-repositorio/server/lista.php?pasta=win32');
+        return this._importeLinks('/sipni/server/lista.php?pasta=win32');
     }
 
     importeLinksWin64() {
-        return this._importeLinks('http://localhost/sipni-repositorio/server/lista.php?pasta=win64');
+        return this._importeLinks('/sipni/server/lista.php?pasta=win64');
     }
 
     importeLinksLnx64() {
-        return this._importeLinks('http://localhost/sipni-repositorio/server/lista.php?pasta=lnx64');
+        return this._importeLinks('/sipni/server/lista.php?pasta=lnx64');
     }
 
     importeDB() {
-        return this._importeLinks('http://localhost/sipni-repositorio/server/lista.php?pasta=db');
+        return this._importeLinks('/sipni/server/lista.php?pasta=db');
     }
 
     importeInst() {
-        return this._importeLinks('http://localhost/sipni-repositorio/server/lista.php?pasta=inst');
+        return this._importeLinks('/sipni/server/lista.php?pasta=inst');
     }
 
     importeBairros() {
-        return this._importeLinks('http://localhost/sipni-repositorio/server/lista.php?pasta=bairros');
+        return this._importeLinks('/sipni/server/lista.php?pasta=bairros');
     }
 
     importeUteis() {
-        return this._importeLinks('http://localhost/sipni-repositorio/server/lista.php?pasta=uteis');
+        return this._importeLinks('/sipni/server/lista.php?pasta=uteis');
     }
 
     _importeLinks(url) {

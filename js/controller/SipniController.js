@@ -72,14 +72,16 @@ class SipniController {
     }
 
     _ultimasAtualizacoes() {
-        this._versao = new Versao(
-            this._ultimaVersaoApp,
-            this._ultimaVersaoDb,
-            this._ultimaVersaoInst,
-            this._ultimaVersaoAppUrl,
-            this._ultimaVersaoDbUrl,
-            this._ultimaVersaoInstUrl
-        );
-        this._versaoView.update(this._versao);
+        setTimeout(() => {
+            this._versao = new Versao(
+                this._ultimaVersaoApp,
+                this._ultimaVersaoDb,
+                this._ultimaVersaoInst,
+                this._ultimaVersaoAppUrl,
+                this._ultimaVersaoDbUrl,
+                this._ultimaVersaoInstUrl
+            );
+            this._versaoView.update(this._versao);
+        }, 3000);
     }
 }
