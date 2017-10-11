@@ -82,6 +82,6 @@ class SipniController {
                 this._ultimaVersaoInstUrl
             );
             this._versaoView.update(this._versao);
-        }, 3000);
+        }, 500);
     }
 }
