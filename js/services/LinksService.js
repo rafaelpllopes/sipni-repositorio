@@ -4,15 +4,15 @@ class LinksService {
     }
 
     importeLinksWin32() {
-        return this._importeLinks('');
+        return this._importeLinks('http://localhost/sipni-repositorio/server/lista.php?pasta=win32');
     }
 
     importeLinksWin64() {
-        return this._importeLinks('');
+        return this._importeLinks('http://localhost/sipni-repositorio/server/lista.php?pasta=win64');
     }
 
     importeLinksLnx64() {
-        return this._importeLinks('');
+        return this._importeLinks('http://localhost/sipni-repositorio/server/lista.php?pasta=lnx64');
     }
 
     _importeLinks(url) {
