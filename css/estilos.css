@@ -1,4 +1,34 @@
-.navbar-brand {
+.navbar {
+	background-color: rgba(0,0,0,0.1);
+}
+
+.navbar-default .navbar-nav>li>a {
+	color: #000;
+	font-weight: bold;
+}
+
+.navbar-default .navbar-nav>li>a:hover {
+	font-weight: bolder;
+	border-bottom: solid 0.2em #0000CD;
+	font-size: 1.5em;
+	border-radius: 1em;
+	transition: .3s;
+}
+
+#vs-sistema a{
+	text-decoration: none;
+	color: #FFF;
+}
+
+#vs-sistema a:hover{
+	font-weight: bolder;
+	font-size: 1.5em;
+	border-radius: 1em;
+	transition: .3s;
+}
+
+.navbar-default .navbar-brand {
+	color: 	#0000CD;
 	font-weight: bold;
 	text-transform: uppercase;
 }
@@ -33,19 +63,6 @@ header {
 	text-transform: uppercase;
 }
 
-#vs-sistema a{
-	text-decoration: none;
-	color: #FFF;
-}
-
-#vs-sistema a:hover{
-	font-weight: bolder;
-	font-size: 1.5em;
-	background-color: rgba(0,0,0,0.5);
-	border-radius: 1em;
-	transition: .3s;
-}
-
 .titulo2 {
 	text-align: center;
 	text-transform: uppercase;
@@ -58,12 +75,6 @@ header {
 
 .descricao-video {
 	padding: 1em;
-}
-
-.menu-nav li a:hover {
-	background-color: rgba(0, 0, 0, 0.2);
-	border-bottom: solid 0.2em lightblue; 
-	font-weight: bold;
 }
 
 @media(min-width: 768px) {
